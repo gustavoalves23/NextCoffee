@@ -1,0 +1,31 @@
+on: [push, pull_request]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visits and validate the repository
+        uses: actions/checkout@v2
+      
+      - name: Install nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run eslint
+        run: npx run eslint . --max-warnings=0
+
+  Cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visits and validate the repository
+        uses: actions/checkout@v2
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start
