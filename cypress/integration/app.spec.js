@@ -11,7 +11,7 @@ describe('Home Page', () => {
 		cy.contains('h1', 'Next Stores');
 	});
 	it('Should have an subtitle with the correct text',()=>{
-		cy.contains('h2','Find your perfect coffe!');
+		cy.contains('h2','Find your perfect coffee!');
 	});
 	it('Should have a button with the correct text',()=>{
 		cy.get('button').should('have.css', 'background-color', hexToRgb('#4745e5'));
