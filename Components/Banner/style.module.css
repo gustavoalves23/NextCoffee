@@ -7,19 +7,24 @@
 }
 
 .button {
-  background-color: #4745e5;
-  color: white;
+  /* background-color: #4745e5; */
+  color: rgb(255, 255, 255);
   padding: 20px 80px;
   border: none;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  min-width: 450px;
+  min-width: 500px;
   border-radius: 20px;
+  white-space: nowrap;
+  background: url(/static/coffee.jpg);
+  background-size: cover;
 }
 
 .button:hover {
   cursor: pointer;
-  background-color: #3634b9;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/coffee.jpg);
+  background-size: cover;
+
 }
 
 .title {
@@ -28,6 +33,8 @@
   font-size: 6rem;
   text-align: center;
   display: flex;
+  position: relative;
+  color: #b40a26;
 }
 
 .title span:nth-child(1) {
@@ -47,13 +54,19 @@
     padding: 20px;
   }
   .button {
-    padding: 20px 30px;
-    min-width: 90vw;
+    padding: 15px 20px;
+    min-width: 80vw;
     white-space: nowrap;
   }
   .title {
     flex-direction: column;
     line-height: .8;
     padding: 30px 0;
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
   }
 }

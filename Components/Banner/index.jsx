@@ -9,7 +9,7 @@ const Banner = () => {
 	return (
 		<div className={style.container} data-test='banner-container'>
 			<h1 className={style.title}>
-				<span>Next </span>
+				<span>Coffee </span>
 				<span>Stores</span>
 			</h1>
 			<h2 className={style.subtitle}>
