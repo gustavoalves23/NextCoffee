@@ -1,5 +1,5 @@
-import dt from '../fixtures/Utils/dataTest';
-import hexToRgb from '../fixtures/Utils/HexToRGB';
+import {dataTest as dt, hexToRgb} from '../support/Utils/';
+
 
 describe('Home Page', () => {
 	beforeEach(() => {cy.visit('/');});
