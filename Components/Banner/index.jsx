@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState, useContext } from 'react';
-import style from '../styles/Banner.module.css';
-import myContext from '../Context/MyContext';
+import myContext from '../../Context/MyContext';
+import style from './style.module.css';
 
 const Banner = () => {
 	const [isFetching, toggleFetching] = useState(false);
 	const {toggleNearby} = useContext(myContext);
 	return (
-		<div className={style.container}>
+		<div className={style.container} data-test='banner-container'>
 			<h1 className={style.title}>
 				<span>Next </span>
 				<span>Stores</span>
