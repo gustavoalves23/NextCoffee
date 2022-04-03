@@ -1,9 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap'); */
+
 .container {
   padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* font-family: 'Send Flowers', cursive; */
 }
 
 .button {
@@ -35,6 +38,7 @@
   display: flex;
   position: relative;
   color: #b40a26;
+  font-family: 'Send Flowers', cursive;
 }
 
 .title span:nth-child(1) {

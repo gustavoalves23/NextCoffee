@@ -1,4 +1,4 @@
-import {dataTest as dt, hexToRgb} from '../support/Utils/';
+import {dataTest as dt, hexToRgb} from '../support/Utils';
 
 describe('Banner', () => {
 	beforeEach(() => {cy.visit('/');});
