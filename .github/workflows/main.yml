@@ -18,7 +18,7 @@ jobs:
       - name: Run eslint
         run: npx eslint . --max-warnings=0
 
-  Unit tests:
+  Unit-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Visits and validate the repository
