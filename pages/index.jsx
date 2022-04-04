@@ -7,7 +7,7 @@ import Provider from '../Context/Provider';
 const Home = () => {
 	return (
 		<Provider>
-			<div className={styles.container}>
+			<div className={styles.container} data-testid='home-container'>
 				<Head>
 					<title>Next Coffee</title>
 					<meta name="description" content="An coffeshop finder build with Next.js" />

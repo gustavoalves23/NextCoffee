@@ -1,19 +1,23 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import Banner from '../Components/Banner';
 import myContext from '../Context/MyContext';
+import React from 'react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 // import userEvent from '@testing-library/user-event';
 
+let toggleNearby;
+
 describe('Banner', () => {
-	test('renders correctly', () => {
-		const toggleNearby = jest.fn();
+	beforeEach(() => {
+		toggleNearby = jest.fn();
 		render(
 			<myContext.Provider value={{nearby: false, toggleNearby}}>
 				<Banner />
 			</myContext.Provider>
 		);
-		const heroTitle = screen.getByTestId('banner-container');
-		expect(heroTitle).toBeInTheDocument();
+	});
+	it('renders correctly', () => {
+		const bannerContainer = screen.getByTestId('banner-container');
+		expect(bannerContainer).toBeInTheDocument();
 	});
 });
