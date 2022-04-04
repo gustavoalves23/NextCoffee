@@ -7,7 +7,7 @@ const Banner = () => {
 	const [isFetching, toggleFetching] = useState(false);
 	const {toggleNearby} = useContext(myContext);
 	return (
-		<div className={style.container} data-test='banner-container'>
+		<div className={style.container} data-testid='banner-container'>
 			<h1 className={style.title}>
 				<span>Coffee </span>
 				<span>Stores</span>
